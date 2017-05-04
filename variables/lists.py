@@ -41,18 +41,36 @@ print(message + guests[5].title() + "?")
 
 message = ", sorry, bitch, you are uninvited."
 uninvited = guests.pop()
-print(uninvited.title() + message)
+print(uninvited.title() + message + "Only " + str(len(guests)) + " remain.")
 uninvited = guests.pop()
-print(uninvited.title() + message)
+print(uninvited.title() + message + "Only " + str(len(guests)) + " remain.")
 uninvited = guests.pop()
-print(uninvited.title() + message)
+print(uninvited.title() + message + "Only " + str(len(guests)) + " remain.")
 uninvited = guests.pop()
-print(uninvited.title() + message)
+print(uninvited.title() + message + "Only " + str(len(guests)) + " remain.")
 
 message = ", you are still invited to dinner, you lucky duck, you."
-print(guests[0].title() + message)
-print(guests[1].title() + message)
+print(guests[0].title() + message + "Only " + str(len(guests)) + " remain.")
+print(guests[1].title() + message + "Only " + str(len(guests)) + " remain.")
 
 del(guests[0])
 del(guests[0])
 print(guests)
+
+visitList = ["Africa", "Antarctica", "Asia", "Alabama", "App State"]
+
+print(visitList)
+print(sorted(visitList))
+print(visitList)
+print(sorted(visitList, reverse = True))
+print(visitList)
+
+visitList.reverse()
+print(visitList)
+visitList.reverse()
+print(visitList)
+
+visitList.sort()
+print(visitList)
+visitList.sort(reverse = True)
+print(visitList)
