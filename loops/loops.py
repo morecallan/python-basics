@@ -64,3 +64,18 @@ for value in places_to_visit[1:4]:
 print("These are the last 3 items in the list:")
 for value in places_to_visit[-3:]:
     print(value)
+
+# My Pizza, Your Pizzas
+my_pizzas = ["Pepperoni", "Cheese", "Pineapple", "Hawaiian", "Meat Lover"]
+friends_pizzas = my_pizzas[:]
+
+my_pizzas.append("Anchovie")
+friends_pizzas.append("Hamburger")
+
+print("My favorite pizzas are:")
+for value in my_pizzas:
+    print(value)
+
+print("My friends favorite pizzas are:")
+for value in friends_pizzas:
+    print(value)
