@@ -19,7 +19,7 @@ for value in range(1, 11):
 
 print(squares)
 
-places_to_visit = ["Disney World", "Harry Potter World", "New Zealand"]
+places_to_visit = ["Disney World", "Harry Potter World", "New Zealand", "Frankfurt", "Banana Stand"]
 
 for place in places_to_visit:
     print("I want to visit " + place)
@@ -50,3 +50,17 @@ for value in to_ten:
 
 list_generation = [value ** 3 for value in range(1,10)]
 print(list_generation)
+
+
+# SLICING AND STUFF
+print("These are the first 3 items in the list:")
+for value in places_to_visit[:3]:
+    print(value)
+
+print("These are the middle 3 items in the list:")
+for value in places_to_visit[1:4]:
+    print(value)
+
+print("These are the last 3 items in the list:")
+for value in places_to_visit[-3:]:
+    print(value)
