@@ -8,7 +8,7 @@ for car in cars:
     else:
         print(car.title())
 
-banned_users = ["andrew", "carolina", "david"]
+banned_users = ["andrew", "carolina", "david", "frank"]
 user = "maria"
 
 if user.lower() not in banned_users:
@@ -18,5 +18,5 @@ people = ['bob', 'FRANK', 'margaret', 'Amanda', 'tASHE']
 
 for person in people:
     for banned in banned_users:
-        if person.lower() === banned.lower():
-            print("You are banned, " + person)
+        if person.lower() == banned.lower():
+            print("You are banned, " + person.title())
