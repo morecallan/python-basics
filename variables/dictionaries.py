@@ -24,7 +24,7 @@ for k, v in sorted(fav_nums.items()):
     print(k.title() + '\'s favorite number is: ' + str(v))
 
 
-# 6.6 Rivers
+# 6.5 Rivers
 rivers = {
     'nile': 'egypt',
     'james': 'united states',
@@ -43,7 +43,7 @@ for country in sorted(rivers.values()):
     print(country.title())
 
 
-# 6.7 Polling
+# 6.6 Polling
 fav_languages = {
 'jen': 'python',
 'sarah': 'node',
@@ -58,3 +58,14 @@ for person in sorted(to_take_poll):
         print(person.title() + ", please take our poll!")
     else:
         print(person.title() + ", thank you for taking our poll!")
+
+
+# 6.7 People (referencing megen from 6.1)
+sarah = {'first_name': 'Sarah', 'last_name': 'Demind', 'age': 27, 'city': 'Nashville, TN'}
+heather = {'first_name': 'Heaher', 'last_name': 'Sharpe', 'age': 26, 'city': 'Raleigh, NC'}
+
+people = [megen, sarah, heather]
+
+for person in people:
+    full_name = person['first_name'].title() + ' ' + person['last_name'].title()
+    print('My friend, ' + full_name + ' is ' + str(person['age']) + ' years old and lives in ' + person['city'] + '.')
