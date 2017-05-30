@@ -18,3 +18,7 @@ print('Sarah\'s favorite number is: ' + str(fav_nums['sarah']))
 print('Heather\'s favorite number is: ' + str(fav_nums['heather']))
 print('Marissa\'s favorite number is: ' + str(fav_nums['marissa']))
 print('Leigh\'s favorite number is: ' + str(fav_nums['leigh']))
+
+# 6.4 Favorite Numbers 2
+for k, v in sorted(fav_nums.items()):
+    print(k.title() + '\'s favorite number is: ' + str(v))
