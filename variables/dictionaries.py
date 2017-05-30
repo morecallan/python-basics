@@ -121,3 +121,32 @@ for person, nums in fav_nums.items():
             print('\t' + str(num))
     else:
         print(person.title() + '\'s favorite numbers is: ' + str(nums[0]))
+
+
+# 6.11 Cities
+cities = {}
+
+nashville = {
+    'country': 'united states',
+    'population': 1830345,
+    'fact': 'Nashville was founded on Christmas Eve 1779.'
+}
+
+shenzen = {
+    'country': 'china',
+    'population': 11910000,
+    'fact': 'Shenzhen has become one of the economic powerhouses of China as well as the largest manufacturing base in the world.'
+}
+
+wellington = {
+    'country': 'new zealand',
+    'population': 496000,
+    'fact': ' Wellington is the southernmost capital in the world.'
+}
+
+cities['nashville'] = nashville
+cities['shenzen'] = shenzen
+cities['wellington'] = wellington
+
+for city, info in cities.items():
+    print(city.title() + " is in " + info['country'].title() + " and has a population of " + str(info['population']) + ". " + info['fact'])
