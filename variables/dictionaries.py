@@ -41,3 +41,20 @@ for river in sorted(rivers):
 print("This is just a list of all the countries:  ")
 for country in sorted(rivers.values()):
     print(country.title())
+
+
+# 6.7 Polling
+fav_languages = {
+'jen': 'python',
+'sarah': 'node',
+'edward': 'c#',
+'phil': 'python'
+}
+
+to_take_poll = ['phil', 'margot', 'mister t', 'sarah']
+
+for person in sorted(to_take_poll):
+    if person.lower() not in fav_languages.keys():
+        print(person.title() + ", please take our poll!")
+    else:
+        print(person.title() + ", thank you for taking our poll!")
