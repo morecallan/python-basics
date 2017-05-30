@@ -69,3 +69,15 @@ people = [megen, sarah, heather]
 for person in people:
     full_name = person['first_name'].title() + ' ' + person['last_name'].title()
     print('My friend, ' + full_name + ' is ' + str(person['age']) + ' years old and lives in ' + person['city'] + '.')
+
+
+# 6.8 Pets
+seymour = {'name': 'seymour', 'type': 'dog', 'owner': 'callan'}
+frontier = {'name': 'frontier', 'type': 'dog', 'owner': 'lilian'}
+pete = {'name': 'pete', 'type': 'goat', 'owner': 'megen'}
+mango = {'name': 'mango', 'type': 'fish', 'owner': 'nick'}
+
+pets = [seymour, frontier, pete, mango]
+
+for pet in pets:
+    print(pet['name'].title() + ' is a ' + pet['type'] + ' and is owned by ' + pet['owner'].title() + '.')
