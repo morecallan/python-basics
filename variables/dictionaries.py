@@ -97,3 +97,27 @@ for person, places in fav_places.items():
             print('\t' + place)
     else:
         print(person.title() + '\'s favorite place is ' + places[0] + '.')
+
+
+# 6.10 Favorite Numbers
+fav_nums = {
+    'megen': 291,
+    'sarah': 3,
+    'heather': 18,
+    'marissa': 21,
+    'leigh': 99
+}
+
+fav_nums['megen'] = [3, 6, 9, 44, 291]
+fav_nums['sarah'] = [9, 3, 4]
+fav_nums['heather'] = [77, 18]
+fav_nums['marissa'] = [21, 69, 0]
+fav_nums['leigh'] = [99]
+
+for person, nums in fav_nums.items():
+    if (len(nums) > 1):
+        print(person.title() + '\'s favorite numbers are: ')
+        for num in nums:
+            print('\t' + str(num))
+    else:
+        print(person.title() + '\'s favorite numbers is: ' + str(nums[0]))
