@@ -8,7 +8,7 @@ for car in cars:
     else:
         print(car.title())
 
-banned_users = ["andrew", "carolina", "david", "frank"]
+banned_users = ["andrew", "carolina", "david", "frank", "tashe"]
 user = "maria"
 
 if user.lower() not in banned_users:
