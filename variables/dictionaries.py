@@ -81,3 +81,19 @@ pets = [seymour, frontier, pete, mango]
 
 for pet in pets:
     print(pet['name'].title() + ' is a ' + pet['type'] + ' and is owned by ' + pet['owner'].title() + '.')
+
+
+# 6.9 Favorite Places
+fav_places = {
+    'megen': ['Alaska', 'the woods', 'ashville, NC'],
+    'sarah': ['Paris', 'Charlotte, NC', 'Nashville, TN'],
+    'marissa': ['bed']
+}
+
+for person, places in fav_places.items():
+    if len(places) > 1:
+        print(person.title() + '\'s favorite places are: ')
+        for place in places:
+            print('\t' + place)
+    else:
+        print(person.title() + '\'s favorite place is ' + places[0] + '.')
