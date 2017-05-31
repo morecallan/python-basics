@@ -13,3 +13,14 @@ if num_in_party > 8:
     print("You'll have to wait for a table, homies")
 else:
     print("We'll get you seated right away.")
+
+
+# 7.3 Multiples of 10
+
+magic_num = input("Enter a number and I'll tell you if it is divisible by 10: \n")
+magic_num = int(magic_num)
+
+if (magic_num % 10 == 0):
+    print("Yup that works!")
+else:
+    print("Nah, bro.")
