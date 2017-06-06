@@ -37,3 +37,19 @@ while True:
         print(response + "$10.")
     else:
         print(respone + "$15.")
+
+
+# 7.8 Deli
+
+sandwich_orders = ['meatball sub', 'grilled cheese', 'pb&j', 'knuckle']
+finished_sandwiches = []
+
+while sandwich_orders:
+    current_sandwich = sandwich_orders.pop()
+
+    print("Making your " + current_sandwich + ".")
+    finished_sandwiches.append(current_sandwich)
+
+print("The following sandwiches have been made: ")
+for sandwich in finished_sandwiches:
+    print(sandwich)
