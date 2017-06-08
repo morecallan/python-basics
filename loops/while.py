@@ -53,3 +53,12 @@ while sandwich_orders:
 print("The following sandwiches have been made: ")
 for sandwich in finished_sandwiches:
     print(sandwich)
+
+
+# 7.9 Needle in the Haystack
+
+haystack = ["needle", "frog", "cat", "needle", "mint", "creep", "needle"]
+needle_collection = []
+
+while "needle" in haystack:
+    if 
