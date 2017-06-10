@@ -56,9 +56,19 @@ for sandwich in finished_sandwiches:
 
 
 # 7.9 Needle in the Haystack
+current_val = 0
 
 haystack = ["needle", "frog", "cat", "needle", "mint", "creep", "needle"]
 needle_collection = []
 
 while "needle" in haystack:
-    if 
+     current = haystack[current_val]
+
+     if (current == "needle"):
+         haystack.pop()
+         needle_collection.append(current)
+
+     current_val = current_val + 1
+
+print(haystack)
+print(needle_collection)
