@@ -65,7 +65,7 @@ while "needle" in haystack:
      current = haystack[current_val]
 
      if (current == "needle"):
-         haystack.pop()
+         haystack.remove("needle")
          needle_collection.append(current)
 
      current_val = current_val + 1
