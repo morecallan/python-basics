@@ -55,7 +55,7 @@ for sandwich in finished_sandwiches:
     print(sandwich)
 
 
-# 7.9 Needle in the Haystack
+# 7 BONUS Needle in the Haystack
 current_val = 0
 
 haystack = ["needle", "frog", "cat", "needle", "mint", "creep", "needle"]
@@ -65,6 +65,7 @@ while "needle" in haystack:
      current = haystack[current_val]
 
      if (current == "needle"):
+         print("found a needle! removing it!")
          haystack.remove("needle")
          needle_collection.append(current)
 
@@ -72,3 +73,13 @@ while "needle" in haystack:
 
 print(haystack)
 print(needle_collection)
+
+# 7.9 No Pastrami
+
+sandwich_orders = ['meatball sub', 'pastrami', 'grilled cheese', 'pastrami', 'pb&j', 'knuckle', 'pastrami']
+finished_sandwiches = []
+
+while 'pastrami' in sandwich_orders:
+    sandwich_orders.remove('pastrami')
+
+print(sandwich_orders)
