@@ -74,6 +74,7 @@ while "needle" in haystack:
 print(haystack)
 print(needle_collection)
 
+
 # 7.9 No Pastrami
 
 sandwich_orders = ['meatball sub', 'pastrami', 'grilled cheese', 'pastrami', 'pb&j', 'knuckle', 'pastrami']
@@ -83,3 +84,20 @@ while 'pastrami' in sandwich_orders:
     sandwich_orders.remove('pastrami')
 
 print(sandwich_orders)
+
+
+# 7.10 Dream Vacation
+
+polling_active = True
+responses = {}
+
+while polling_active:
+    name = input("\nWhat is your name?")
+    dream_vacation = input("If you could visit one place in the world, where would it be?")
+
+    responses[name] = dream_vacation
+
+    repeat = input("Would you like to add another response? (y/n)?")
+
+    if repeat == "no" or repeat == "n":
+        polling_active = False
