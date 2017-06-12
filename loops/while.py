@@ -101,3 +101,8 @@ while polling_active:
 
     if repeat == "no" or repeat == "n":
         polling_active = False
+
+
+print(" -- POLLING RESULTS -- ")
+for name, response in responses.items():
+    print(name + " would like to visit: " + response)
