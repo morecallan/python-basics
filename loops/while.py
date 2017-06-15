@@ -1,6 +1,6 @@
 # 7.4 Pizza Toppings
 
-prompt = "\nEnter a topping you want on your pizza."
+prompt = "\nEnter a topping you want on your pizza?  \U000025B6 "
 prompt += "\n(Type 'quit' when you are done.): "
 
 toppings = []
@@ -21,7 +21,7 @@ for toppin in toppings:
 
 # 7.5 Movie Tickets
 
-prompt = "\nEnter your age to receive your movie ticket price."
+prompt = "\nEnter your age to receive your movie ticket price.  \U000025B6 "
 prompt += "\n(Type 'quit' when you are done.): "
 
 response = "Your ticket price is: "
@@ -36,7 +36,7 @@ while True:
     elif int(age) < 12:
         print(response + "$10.")
     else:
-        print(respone + "$15.")
+        print(response + "$15.")
 
 
 # 7.8 Deli
@@ -92,8 +92,8 @@ polling_active = True
 responses = {}
 
 while polling_active:
-    name = input("\nWhat is your name?")
-    dream_vacation = input("If you could visit one place in the world, where would it be?")
+    name = input("\nWhat is your name?  \U000025B6 ")
+    dream_vacation = input("If you could visit one place in the world, where would it be?  \U000025B6 ")
 
     responses[name] = dream_vacation
 
@@ -103,6 +103,6 @@ while polling_active:
         polling_active = False
 
 
-print(" -- POLLING RESULTS -- ")
+print("\n\n -- POLLING RESULTS -- ")
 for name, response in responses.items():
     print(name + " would like to visit: " + response)
