@@ -36,3 +36,13 @@ def make_large_tshirt(size="XL", text_of_message="I Love Python"):
 make_large_tshirt()
 make_large_tshirt(size='Medium')
 make_large_tshirt(size='Small', text_of_message="Yo")
+
+
+# 8.5 cities
+
+def describe_cities(city_name, country_name="the United States"):
+    print(city_name.title() + " is in " + country_name + ".")
+
+describe_cities("Nashville")
+describe_cities("Richmond")
+describe_cities("Paris", country_name="France")
