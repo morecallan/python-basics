@@ -24,3 +24,15 @@ def make_tshirt(size, text_of_message):
 
 make_tshirt('X-Small', 'Peace, bitch.')
 make_tshirt(text_of_message='Peace, bitch.', size='X-Small')
+
+
+# 8.4 Large Shirts
+
+def make_large_tshirt(size="XL", text_of_message="I Love Python"):
+    print("You should make a shirt: ")
+    print("\tSize: " + size)
+    print("\tText: " + text_of_message)
+
+make_large_tshirt()
+make_large_tshirt(size='Medium')
+make_large_tshirt(size='Small', text_of_message="Yo")
