@@ -38,7 +38,7 @@ make_large_tshirt(size='Medium')
 make_large_tshirt(size='Small', text_of_message="Yo")
 
 
-# 8.5 cities
+# 8.5 Cities
 
 def describe_cities(city_name, country_name="the United States"):
     print(city_name.title() + " is in " + country_name + ".")
@@ -46,3 +46,13 @@ def describe_cities(city_name, country_name="the United States"):
 describe_cities("Nashville")
 describe_cities("Richmond")
 describe_cities("Paris", country_name="France")
+
+
+# 8.6 City Names
+
+def city_country(city_name, country_name):
+    """ Returns a city and country name, neatly formatted """
+    return city_name.title() + ', ' + country_name.title()
+
+paris = city_country("paris", "france")
+print(paris)
