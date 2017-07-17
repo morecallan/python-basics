@@ -18,6 +18,7 @@ favorite_book("alice in wonderland")
 # 8.3 T-Shirt
 
 def make_tshirt(size, text_of_message):
+    """ Prints the size of the T-shirt and the message to print on it. """
     print("You should make a shirt: ")
     print("\tSize: " + size)
     print("\tText: " + text_of_message)
@@ -29,6 +30,7 @@ make_tshirt(text_of_message='Peace, bitch.', size='X-Small')
 # 8.4 Large Shirts
 
 def make_large_tshirt(size="XL", text_of_message="I Love Python"):
+    """ Prints the size of the T-shirt and the message to print on it."""
     print("You should make a shirt: ")
     print("\tSize: " + size)
     print("\tText: " + text_of_message)
@@ -41,6 +43,7 @@ make_large_tshirt(size='Small', text_of_message="Yo")
 # 8.5 Cities
 
 def describe_cities(city_name, country_name="the United States"):
+    """ Prints a city and country name, neatly formatted """
     print(city_name.title() + " is in " + country_name + ".")
 
 describe_cities("Nashville")
