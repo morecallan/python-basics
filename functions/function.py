@@ -59,3 +59,23 @@ def city_country(city_name, country_name):
 
 paris = city_country("paris", "france")
 print(paris)
+
+
+# 8.7 Albums
+
+def make_album(artist_name, album_title, num_of_tracks = ''):
+    """ Returns a dictionary representation of album information. """
+    album = {'artist_name': artist_name, 'album_name': album_title}
+
+    if (num_of_tracks):
+        album['number_of_tracks'] = num_of_tracks
+
+    return album
+
+album_thriller = make_album('Michael Jackson', 'Thriller')
+album_back_in_black = make_album('AC/DC', 'Back in Black')
+album_dark_side_of_the_moon = make_album('Pink Floyd', 'Dark Side of the Moon', 10)
+
+print(album_thriller)
+print(album_back_in_black)
+print(album_dark_side_of_the_moon)
