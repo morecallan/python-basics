@@ -79,3 +79,35 @@ album_dark_side_of_the_moon = make_album('Pink Floyd', 'Dark Side of the Moon', 
 print(album_thriller)
 print(album_back_in_black)
 print(album_dark_side_of_the_moon)
+
+# 8.8
+
+def make_album(artist_name, album_title, num_of_tracks = ''):
+    """ Returns a dictionary representation of album information. """
+    album = {'artist_name': artist_name, 'album_name': album_title}
+
+    if (num_of_tracks):
+        album['number_of_tracks'] = num_of_tracks
+
+    return album
+
+def check_for_quit(value):
+    if (value == 'q'):
+        return True
+
+while True:
+    print("Enter album information and get a dictionary back, enter 'q' at any point to quit: ")
+
+    artist_name = input("Enter an artist name: ")
+    if (check_for_quit(artist_name)):
+        break
+
+    album_name = input("Enter an album name: ")
+    if (check_for_quit(album_name)):
+        break
+
+    num_of_tracks = input("Enter a number of tracks: ")
+    if (check_for_quit(num_of_tracks)):
+        break
+
+    make_album(artist_name, album_name, num_of_tracks)
