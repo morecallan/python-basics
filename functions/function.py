@@ -95,6 +95,7 @@ def check_for_quit(value):
     if (value == 'q'):
         return True
 
+# This while loop checks for the q input at each input prompt to see if the user wants to exit the program.
 while True:
     print("Enter album information and get a dictionary back, enter 'q' at any point to quit: ")
 
