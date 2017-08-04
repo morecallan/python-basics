@@ -127,13 +127,13 @@ show_magicians(magicians)
 
 # 8.10 Great magicians
 
-other_magician = []
+great_magicians = []
 
-def make_great(magical_beings):
-    while magical_beings:
+def make_great(magical_beings_list, new_magicial_beings_list):
+    while magical_beings_list:
         """ Takes a list of magicians, removes them from the original list, manipulates to values then adds them to the new list.  """
-        bye_magician = magical_beings.pop()
-        other_magician.append(bye_magician.title() + " the Great")
+        bye_magician = magical_beings_list.pop()
+        new_magicial_beings_list.append(bye_magician.title() + " the Great")
 
 def print_magicians(magician_list):
     """ Prints a list of magicians """
@@ -141,8 +141,8 @@ def print_magicians(magician_list):
         print(magician)
 
 
-make_great(magicians)
-print_magicians(other_magician)
+make_great(magicians, great_magicians)
+print_magicians(great_magicians)
 
 # 8.10 Attempt 2, not using multiple lists, because that seems silly.
 
@@ -160,3 +160,11 @@ def print_magicians(magician_list):
 
 add_great(magicians)
 print_magicians(magicians)
+
+
+# 8.11 Magicians without manipulation
+# In order for this to work, 8.10 attempt 2 needs to be commented out and 8.10 og function calls need to be commented out
+
+make_great(magicians[:], great_magicians)
+print_magicians(magicians)
+print_magicians(great_magicians)
