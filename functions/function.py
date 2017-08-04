@@ -114,12 +114,30 @@ while True:
     make_album(artist_name, album_name, num_of_tracks)
 
 
-# Magicians
+# 8.9 Magicians
 
 magicians = ['Daid Blaine', 'Gandalf', 'Pete']
 
 def show_magicians(magicians):
+    """ Receives a list of magicians and prints them one at a time. """
     for magician in magicians:
         print(magician.title())
 
 show_magicians(magicians)
+
+# 8.10 Great magicians
+
+other_magician = []
+
+def make_great(magical_beings):
+    while magical_beings:
+        bye_magician = magical_beings.pop()
+        other_magician.append(bye_magician.title() + " the Great")
+
+def print_magicians(magician_list):
+    for magician in magician_list:
+        print(magician)
+
+
+make_great(magicians)
+print_magicians(other_magician)
