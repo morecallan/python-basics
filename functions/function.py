@@ -80,7 +80,7 @@ print(album_thriller)
 print(album_back_in_black)
 print(album_dark_side_of_the_moon)
 
-# 8.8
+# 8.8 User Album
 
 def make_album(artist_name, album_title, num_of_tracks = ''):
     """ Returns a dictionary representation of album information. """
@@ -112,3 +112,14 @@ while True:
         break
 
     make_album(artist_name, album_name, num_of_tracks)
+
+
+# Magicians
+
+magicians = ['Daid Blaine', 'Gandalf', 'Pete']
+
+def show_magicians(magicians):
+    for magician in magicians:
+        print(magician.title())
+
+show_magicians(magicians)
