@@ -131,10 +131,12 @@ other_magician = []
 
 def make_great(magical_beings):
     while magical_beings:
+        """ Takes a list of magicians, removes them from the original list, manipulates to values then adds them to the new list.  """
         bye_magician = magical_beings.pop()
         other_magician.append(bye_magician.title() + " the Great")
 
 def print_magicians(magician_list):
+    """ Prints a list of magicians """
     for magician in magician_list:
         print(magician)
 
@@ -147,10 +149,12 @@ print_magicians(other_magician)
 magicians = ['Frederick', 'Mark', 'Alana']
 
 def add_great(magician_list):
+    """ Takes a list of magicians and manipulates each item in the list to add 'the Great' to their title. """
     for i in range(len(magician_list)):
         magician_list[i] = magician_list[i] + ' the Great!'
 
 def print_magicians(magician_list):
+    """ Prints a list of magicians """
     for magician in magician_list:
         print(magician)
 
