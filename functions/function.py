@@ -141,3 +141,18 @@ def print_magicians(magician_list):
 
 make_great(magicians)
 print_magicians(other_magician)
+
+# 8.10 Attempt 2, not using multiple lists, because that seems silly.
+
+magicians = ['Frederick', 'Mark', 'Alana']
+
+def add_great(magician_list):
+    for i in range(len(magician_list)):
+        magician_list[i] = magician_list[i] + ' the Great!'
+
+def print_magicians(magician_list):
+    for magician in magician_list:
+        print(magician)
+
+add_great(magicians)
+print_magicians(magicians)
